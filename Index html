@@ -1,0 +1,87 @@
+k!DOCTYPE htm1>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CAKE DE MADAGASCAR</title>
+  <link rel="stylesheet" href="style.css"
+
+</head>
+
+<body>
+
+<a href="#main-content"class="skip-link">Skip to Main Content</a>
+
+<header>
+    <nav>
+   
+        <ol>
+         <li>CAKE DE MADAGASCAR</>
+        </ol>
+
+        <ul>
+        <li><a href="#" onclick="showSection('mofogasy')">Mofogasy</a></li>
+        <li><a href="#" onclick="showSection('koba')">Koba</a></li>
+        <li><a href="#" onclick="showSection('ramanonaka')">Ramanonaka</a></li>
+        
+        </ul>
+
+   </nav>
+   </header>
+
+<main id="main-content">
+
+<!-- MOFOGASY-->
+<section id="mofogasy"class="section visible">
+<h1>Mofogasy</h1>
+<div class="grid">
+    <img src="../imgs/mofogasy1.jpg"alt="Mofogasy">
+    <img src="../imgs/mofogasy2.jpg"alt="Mofogasy">
+    <img src="../imgs/mofogasy3.jpg"alt="Mofogasy">
+    <ima src="../imas/mofogasy4.jpg"alt=mofogasy">
+</div>
+
+</section>
+
+<!--RAMANΟΝΑΚΑ-->
+<section id="ramanonaka" class="section">
+<h1>Ramanonaka</h1>
+<div class="grid">
+    <img src="../imgs/ramanonaka1.jpg" alt="Ramanonaka">
+    <img src="../imgs/ramanonaka2.jpg" alt="Ramanonaka">
+    <img src="../imgs/ramanonaka3.jpg" alt="Ramanonaka"
+    <img src="../imgs/ramanonaka4.jpg" alt="Ramanonaka">
+</div>
+
+</section>
+
+<!-- KOBA -->
+<section id="koba" class="section">
+<h1>Koba</h1>
+<div class="flex">
+    <img src="../imgs/koba1.jpg"alt="Koba">
+    <img src="../imgs/koba2.jpg"alt="Koba">
+    <img src="../imgs/koba3.jpg"alt="Koba">
+    <img src="../imgs/koba4.jpg"alt="Koba">
+</div>
+
+</section>
+</main>
+
+<footer>
+  <p>&copy;Mialitiana devoir 2026</p>
+</footer>
+   
+<!-- JS -->
+<script>
+ function showSection(id) {
+  const sections = document
+    .querySelectorAll('.section');
+  sections.forEach(section=> {  
+     section.classList.remove('visible');
+});
+document.getElementById(id).classList .add('visible');
+
+</script>
+    
+</body>
+</html>
